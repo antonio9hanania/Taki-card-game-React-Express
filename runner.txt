@@ -1,0 +1,13 @@
+cd Desktop\ex3
+npm run build
+
+cd Desktop\ex3
+npm run build
+cd src
+node server
+
+cd Desktop\ex3
+npm install --save express
+npm run build
+cd src
+node server

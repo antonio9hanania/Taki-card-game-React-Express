@@ -1,0 +1,557 @@
+
+.btn {
+font-size: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    border-style: groove;
+    background-color: #d0f3e8;
+    border-color: #d0f3e8;
+    margin: 0 3px;
+    border-radius: 30%;
+}
+
+body {
+    background-image: url('./components/resources/background.png');
+}
+
+.chat-base-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 56vh;
+    bottom: 0;
+    right: 0;
+    max-height: 40vh;
+}
+.converssion-area-wrpper{
+    overflow: scroll;
+}
+
+.chat-base-container .user-info-area {
+    margin: 8px;
+    font-size: 16px;
+}
+.user-info-area{
+    color: white;
+    font-size: larger;
+    border: 3px solid black;
+    background-color: #3B5998;
+    right: 0;
+	width: 100%;
+}
+
+#stats{
+    text-align: center;
+}
+.login-page-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-page-wrapper .taki-logo {
+    width: 250px;
+    margin: 16px 0;
+}
+
+.login-page-wrapper .username-label {
+    margin: 0 5px;    
+    font-size: 18px;
+}
+
+.login-page-wrapper .username-input {    
+    font-size: 16px;
+    line-height: 16px;
+    margin: 1px;
+    border: 1px solid #ccc;   
+}
+
+.login-page-wrapper .submit-btn:hover {
+    background-color: #cadcff;
+    border-color: #cadcff;
+}
+
+.login-page-wrapper .login-error-message {
+    color: red;
+    font-weight: 600;
+}
+
+.chat-contaier {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	width: 49vw;
+}
+
+.chat-contaier .converssion-area-wrpper {
+    flex-grow: 1;
+	background-color: white;
+}
+
+.chat-contaier .converssion-area-wrpper p{
+    margin: 0 0 8px 0;
+}
+
+.chat-contaier .chat-input-wrapper {
+    margin-bottom: 8px;
+    width: 100%;
+    display: flex;
+}
+
+.chat-contaier .chat-input-wrapper input{
+    line-height: 16px;
+    font-size: 16px;
+    margin: 1px;
+    height: 48px;
+    padding: 8px;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.chat-contaier .chat-input-wrapper .btn {
+    flex-grow: 0;
+    width: 88px;
+    margin: 0 2px 0 5px;
+}
+
+
+#openingPage {
+    width: 100%;
+    height: 100%;
+}
+
+#startButton {
+    margin-top: Taki_imeg;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+h1 {
+    margin-top: auto;
+    height: auto;
+    width: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    font-family: Lobster;
+    text-align: center;
+}
+
+h2 {
+    font-family: Lobster;
+}
+
+h3 {
+    font-family: Lobster;
+    bottom: 0px;
+}
+
+h4 {
+    font-family: Lobster;
+    font-size: 15px;
+    bottom: 0%;
+}
+
+
+.cards {
+    width: 7vw;
+    height: 20vh;
+
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#Player_3 {
+    position: flex;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#Player_2 {
+    position: flex;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Player_1 {
+    position: flex;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#Player_0 {
+    position: flex;
+    left: 0%;
+    right: 0%;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#pile {
+
+}
+
+#deck {
+    top: 8%;
+    right: 15%;
+}
+
+#deck_image {
+    position: fixed;
+    left: 70%
+}
+#takeCard_button {
+    right: 9%;
+    transform: translate(-50%, -50%);
+    position: flex;
+    text-align: center;
+
+}
+#pickColorModal {
+    text-align: center;
+    position: absolute;
+    background: #6699ff;
+    top: 150%;
+    left: 40%;
+    width: 20vw;
+    height: 20vh;
+    box-shadow: 0 50px 50px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.changeColorBottons {
+    height: 50%;
+    margin-top: 12%;
+    width: 20%;
+    font-family: Lobster;
+    font-size: 120%;
+}
+
+.playerCards {
+    width: 7vw;
+    height: 20vh;
+    border-radius: 3px;
+    position: relative;
+    border: 1px solid black;
+    margin-left: -3%;
+}
+
+.playerHoverCards {
+    width: 7vw;
+    height: 20vh;
+    border-radius: 3px;
+    position: relative;
+    margin-left: player;
+    border: 1px solid black;
+    margin-left: -3%;
+    -webkit-transition-property: top;
+    -webkit-transition-duration: 2s;
+    top: 0;
+}
+
+    .playerHoverCards:hover {
+        top: -50px;
+    }
+
+.pileCards {
+    width: 7vw;
+    height: 20vh;
+    position: fixed;
+    left: 45%;
+}
+
+
+#page_content {
+    width: 100%;
+    height: 100%;
+}
+
+#gameScreen {
+    width: 100%;
+    height: 100%;
+}
+
+#niceToKnow {
+    display: block;
+    width: 30vw;
+    position: fixed;
+    margin-top: -13vh;
+}
+
+#Taki_imeg {
+    display: block;
+    margin: 0 auto;
+    height: 40vh;
+    width: 40vw;
+}
+
+#Haim_imeg {
+    margin-bottom: auto;
+    bottom: 0%;
+    position: relative;
+    height: 30%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#playersList{
+    background-color: white;
+    height: 43vh;
+    width: 49vw;
+    position: fixed;
+    left: 0;
+    margin-top: 7vh;
+    overflow: scroll;
+}
+#gameRooms{
+    background-color: white;
+    height: 43vh;
+    width: 49vw;
+    position: fixed;
+    right: 0;
+    margin-top: 7vh;
+    overflow: scroll;
+}
+
+#head_of_everything{
+	border: 3px solid black;
+    height: 4vh;
+    position: fixed;
+    right: 0;
+	width: 100%;
+	top: 0vh;
+}
+
+#game_room_logo{
+    left: 75%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 9vh;
+    height: 8vh;
+    width: 16vw;
+}
+
+#online_users{
+    left: 25%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 9.5vh;
+    height: 7vh;
+    width: 8vw;
+}
+
+#LOSER_imeg {
+    margin-left: 30%;
+    height: 15%;
+    width: 40%;
+}
+
+#Waiting_imag{
+    margin-top: 4%;
+    margin-left: 38%;
+    display: block;
+    height: 40vh;
+    width: 30vw;
+    max-height: 30%;
+}
+#WINNER_imeg {
+    margin-left: 30%;
+    height: 12%;
+    width: 40%;
+}
+
+
+#create_game_button{
+    transform: translate(-50%, -50%);
+    position: absolute;
+	height: 3vh;
+    width: 6vw;
+	top: 2vh;
+	left: 23vw;
+}
+
+#join_game_button{
+    transform: translate(-50%, -50%);
+    position: absolute;
+	height: 3vh;
+    width: 6vw;
+	top: 2vh;
+	left: 16vw;
+}
+
+
+.list-type4{
+    width:410px;
+    margin:0 auto;
+    }
+
+.list-type3{
+        width:410px;
+        margin:0 auto;
+        }
+
+    .list-type4 ol{
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin-bottom: 4em;
+    }
+    .list-type3 ol{
+        counter-reset: li;
+        list-style: none;
+        *list-style: decimal;
+        font-size: 15px;
+        font-family: 'Raleway', sans-serif;
+        padding: 0;
+        margin-bottom: 4em;
+        }
+    .list-type4 a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: rgb(206, 206, 206);
+    color: white;
+    text-decoration: none;
+    box-shadow:inset 0.5em 0 black;
+    -webkit-transition: box-shadow 1s; /* For Safari 3.1 to 6.0 */
+    transition: box-shadow 1s;
+    }
+
+    .list-type3 a{
+        position: relative;
+        display: block;
+        padding: .4em .4em .4em 2em;
+        *padding: .4em;
+        margin: .5em 0;
+        background: rgb(206, 206, 206);
+        color: white;
+        text-decoration: none;
+        box-shadow:inset 0.5em 0 black;
+        -webkit-transition: box-shadow 1s; /* For Safari 3.1 to 6.0 */
+        transition: box-shadow 1s;
+        }
+    .list-type4 a:hover{
+        box-shadow:inset 2em 0 black;
+        color: rgb(59,89,152);    
+        font-weight: bolder;
+    }
+
+    
+    #Modal {
+        text-align: center;
+        position: fixed;
+        background: #6699ff;
+        top: 25%;
+        left: 25%;
+        width: 50vw;
+        height: 50vh;
+        border: 1px solid rgb(0, 0, 0);   
+        box-shadow: 0 50px 50px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+      .list {
+        flex: 0 0 20rem;
+      }
+      .list__item {
+        position: relative;
+      }
+      .list__item:hover > .label {
+        color: #009688;
+      }
+      .list__item:hover > .label::before {
+        border: 0.5rem solid #009688;
+        margin-right: 2rem;
+      }
+      .radio-btn {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+      }
+      .radio-btn:checked + .label {
+        color: #009688;
+      }
+      .radio-btn:checked + .label::before {
+        margin-right: 2rem;
+        border: 0.5rem solid #009688;
+        background: black;
+      }
+      .label {
+        display: flex;
+        align-items: center;
+        padding: 0.75rem 0;
+        color: black;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.25s linear;
+      }
+      .label::before {
+        display: inline-block;
+        content: "";
+        height: 1.125rem;
+        width: 1.125rem;
+        margin-right: 0.625rem;
+        border: 0.5rem solid black;
+        border-radius: 50%;
+        transition: all 0.25s linear;
+      }
+      
+      .nobull {
+        list-style-type: none;
+        display: table;
+        margin: 0 auto;
+        flex: 0 0 20rem;
+
+    }
+
+
+
+
+
+    
